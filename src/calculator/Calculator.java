@@ -13,7 +13,7 @@ public class Calculator {
         input = _input;
         factory = _factory;
     }
-    public void calculate() throws ClassNotFoundException, InstantiationException, IllegalAccessException, CalculatorException {
+    public void calculate() throws CalculatorException {
         Scanner scan = new Scanner(input);
 
         String currentCommand;
@@ -28,14 +28,8 @@ public class Calculator {
                 continue;
             }
             currentArgs = currentCommand.split(" ");
-            Operation currentOperation = (Operation) Factory.createObject(currentArgs[0]);
+            Operation currentOperation = (Operation) Factory.createOperation(currentArgs[0]);
             currentOperation.execute(currentArgs, factory.getExecutionContext());
-
-//            if (scan.hasNext()) {
-//                currentCommand = scan.nextLine();
-//            } else {
-//                break;
-//            }
         }
     }
 }

@@ -1,0 +1,9 @@
+POP operations.PopOperation
+PUSH operations.PushOperation
++ operations.AddOperation
+- operations.SubOperation
+* operations.MulOperation
+/ operations.DivOperation
+SQRT operations.SqrtOperation
+PRINT operations.PrintOperation
+DEFINE operations.DefineOperation

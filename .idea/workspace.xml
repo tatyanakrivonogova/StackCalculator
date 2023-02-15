@@ -4,41 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="created operations and some operation exceptions">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/ExecutionContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/CalculatorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/DivisionByZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/InvalidArgument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/InvalidNumberOfArguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/NotEnoughElementsOnStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/StackIsEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/UndeclaredVariable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configurationExceptions/ConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configurationExceptions/NotFoundConfigFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/AddOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/DefineOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/DivOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/MulOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/PopOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/PrintOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/PushOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/SqrtOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/operations/SubOperation.java" afterDir="false" />
+    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="it works!!! but still too much problems:(">
+      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/inputStreamExceptions/InputStreamException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculatorExceptions/inputStreamExceptions/NotFoundInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/operations/Operation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +57,16 @@
       <recent name="Operations" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="lab2" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/src/commands.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,6 +76,14 @@
       <option name="presentableId" value="Default" />
       <updated>1676388074254</updated>
     </task>
+    <task id="LOCAL-00001" summary="it works!!! but still too much problems:(">
+      <created>1676472909887</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676472909887</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,34 +99,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created operations and some operation exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="created operations and some operation exceptions" />
+    <MESSAGE value="it works!!! but still too much problems:(" />
+    <option name="LAST_COMMIT_MESSAGE" value="it works!!! but still too much problems:(" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/calculator/Factory.java</url>
-          <line>18</line>
+          <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/operations/PrintOperation.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>13</line>
+          <line>16</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>14</line>
+          <line>17</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -162,11 +147,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/calculator/Calculator.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/calculator/Calculator.java</url>
           <line>24</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -177,22 +157,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>15</line>
+          <line>18</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>16</line>
+          <line>19</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/calculator/Calculator.java</url>
-          <line>38</line>
+          <line>32</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/calculator/Calculator.java</url>
-          <line>39</line>
+          <line>33</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -202,8 +182,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/calculator/Configuration.java</url>
-          <line>35</line>
+          <line>39</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/DivisionByZero.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
