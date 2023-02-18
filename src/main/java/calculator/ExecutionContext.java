@@ -12,7 +12,6 @@ public class ExecutionContext {
         stack = new Stack<>();
         variables = new HashMap<>();
     }
-
     public Stack<Double> getStack() {
         return stack;
     }
