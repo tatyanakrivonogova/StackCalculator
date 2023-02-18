@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 
 public class SubOperationTest {
 
-    Factory factory = new Factory("config.properties");
+    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
     public SubOperationTest() throws ReflectiveOperationException, IOException {}

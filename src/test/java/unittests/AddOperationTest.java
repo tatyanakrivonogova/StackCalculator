@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 
 public class AddOperationTest {
 
-    Factory factory = new Factory("config.properties");
+    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
     public AddOperationTest() throws ReflectiveOperationException, IOException {}

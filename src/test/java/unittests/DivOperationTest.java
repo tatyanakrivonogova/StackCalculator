@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 
 public class DivOperationTest {
 
-    Factory factory = new Factory("config.properties");
+    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
     public DivOperationTest() throws ReflectiveOperationException, IOException {}

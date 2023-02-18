@@ -2,13 +2,33 @@ package calculator;
 
 import java.io.IOException;
 
+//public class Factory {
+//
+//    public Factory(String _configFile) throws ReflectiveOperationException, IOException {
+//        configuration = new Configuration(_configFile);
+//    }
+//
+//    public static Object getOperation(final String selectedObject) {
+//        return configuration.getConfigurationMap().get(selectedObject);
+//    }
+//}
+
 public class Factory {
+    private static Factory INSTANCE;
+    private static final String configFile = "config.properties";
     private static Configuration configuration;
-    public Factory(String _configFile) throws ReflectiveOperationException, IOException {
-        configuration = new Configuration(_configFile);
+    private Factory() throws ReflectiveOperationException, IOException {
+        configuration = new Configuration(configFile);
     }
 
     public static Object getOperation(final String selectedObject) {
         return configuration.getConfigurationMap().get(selectedObject);
+    }
+
+    public static Factory getInstance() throws ReflectiveOperationException, IOException {
+        if (INSTANCE == null) {
+            INSTANCE = new Factory();
+        }
+        return INSTANCE;
     }
 }
