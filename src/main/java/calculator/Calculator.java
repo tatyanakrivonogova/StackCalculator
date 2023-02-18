@@ -48,7 +48,6 @@ public class Calculator {
             catch (CalculatorException e) {
                 logger.log(Level.INFO, e.getMessage());
             }
-
         }
     }
 }

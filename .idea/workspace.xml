@@ -5,49 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="exception handler was added, first test for add">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_1_2_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/DefineOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/DivOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/MulOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/PrintOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/SubOperationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/ExecutionContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/ExecutionContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/CalculatorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/CalculatorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/inputStreamExceptions/InputStreamException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/inputStreamExceptions/NotFoundInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/DivisionByZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/DivisionByZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/InvalidArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidArgument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/InvalidNumberOfArguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidNumberOfArguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/NotEnoughElementsOnStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/NotEnoughElementsOnStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/StackIsEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/StackIsEmpty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculatorExceptions/operationExceptions/UndeclaredVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/UndeclaredVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configurationExceptions/ConfigurationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configurationExceptions/NotFoundConfigFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/AddOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/AddOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/DefineOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DefineOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/DivOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DivOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/MulOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/MulOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/Operation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/PopOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PopOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/PrintOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PrintOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/PushOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PushOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/SqrtOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SqrtOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/SubOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SubOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +56,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -97,7 +70,7 @@
       <recent name="Calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddOperationTest">
+  <component name="RunManager" selected="TestNG.DefineOperationTest">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab2" />
@@ -106,7 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DefineOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +88,76 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.AddOperationTest" />
+      <option name="MAIN_CLASS_NAME" value="unittests.DefineOperationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DivOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.DivOperationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MulOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.MulOperationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MulOperationTest.zeroMul" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.MulOperationTest" />
+      <option name="METHOD_NAME" value="zeroMul" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.PrintOperationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -125,11 +167,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="TestNG.AddOperationTest" />
+      <item itemvalue="TestNG.DefineOperationTest" />
+      <item itemvalue="TestNG.DivOperationTest" />
+      <item itemvalue="TestNG.MulOperationTest" />
+      <item itemvalue="TestNG.MulOperationTest.zeroMul" />
+      <item itemvalue="TestNG.PrintOperationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddOperationTest" />
+        <item itemvalue="TestNG.DefineOperationTest" />
+        <item itemvalue="TestNG.PrintOperationTest" />
+        <item itemvalue="TestNG.DivOperationTest" />
+        <item itemvalue="TestNG.MulOperationTest.zeroMul" />
+        <item itemvalue="TestNG.MulOperationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676481652380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="exception handler was added, first test for add">
+      <created>1676712818665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676712818665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +241,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/DivisionByZero.java</url>
           <line>6</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/calculator/Calculator.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
