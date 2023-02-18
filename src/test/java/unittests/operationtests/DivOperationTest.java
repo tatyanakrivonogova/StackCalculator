@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -19,7 +19,7 @@ public class DivOperationTest {
 
     public DivOperationTest() throws ReflectiveOperationException, IOException {}
 
-    @Test
+    @Test(groups = "Div")
     public void intDiv() {
         logger.log(Level.INFO, "Test for int div operation started...");
         String intDiv = """
@@ -31,7 +31,7 @@ public class DivOperationTest {
         assertEquals(3.6, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void negativeIntDiv() {
         logger.log(Level.INFO, "Test for negative int div operation started...");
         String negativeIntDiv = """
@@ -43,7 +43,7 @@ public class DivOperationTest {
         assertEquals(-0.2777777777777778, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void doubleDiv() {
         logger.log(Level.INFO, "Test for double div operation started...");
         String doubleDiv = """
@@ -55,7 +55,7 @@ public class DivOperationTest {
         assertEquals(12.600000000000001, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void negativeDoubleDiv() {
         logger.log(Level.INFO, "Test for negative double div operation started...");
         String negativeDoubleDiv = """
@@ -67,7 +67,7 @@ public class DivOperationTest {
         assertEquals(-12.600000000000001, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void zero1Div() {
         logger.log(Level.INFO, "Test for zero first div operation started...");
         String zeroDiv = """
@@ -79,7 +79,7 @@ public class DivOperationTest {
         assertEquals(0, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for zero first div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void zero2Div() {
         logger.log(Level.INFO, "Test for zero second div operation started...");
         String zeroDiv = """
@@ -92,7 +92,7 @@ public class DivOperationTest {
         assertEquals(6, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for zero second div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void notEnoughArgumentsDiv() {
         logger.log(Level.INFO, "Test for not enough arguments div operation started...");
         String notEnoughArgumentsDiv = """
@@ -104,7 +104,7 @@ public class DivOperationTest {
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for not enough arguments div operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Div")
     public void emptyDiv() {
         logger.log(Level.INFO, "Test for empty div operation started...");
         String emptyDiv = """

@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="tests for +, -, *, / define, print">
+    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="Factory moved to singleton">
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidSqrtArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PopOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PushOperationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SqrtOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/PushOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PushOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/SqrtOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SqrtOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/AddOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/AddOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/DefineOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DefineOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/DivOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DivOperation.java" afterDir="false" />
@@ -15,12 +22,12 @@
       <change beforePath="$PROJECT_DIR$/src/operations/PopOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PopOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/PrintOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PrintOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/operations/SubOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SubOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/DefineOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/DefineOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/DivOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/DivOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/MulOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/MulOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/PrintOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/PrintOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/SubOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/SubOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/DefineOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DefineOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/DivOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DivOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/MulOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/MulOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/PrintOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PrintOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/SubOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SubOperationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +69,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="unittests.operationtests" />
       <recent name="calculatorExceptions.inputStreamExceptions" />
       <recent name="configurationExceptions" />
       <recent name="calculatorExceptions.configExceptions" />
       <recent name="calculatorExceptions.operationExceptions" />
-      <recent name="Calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddOperationTest">
+  <component name="RunManager" selected="TestNG.D:/java/lab2/target/testng.xml">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab2" />
@@ -78,16 +85,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/java/lab2/target/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/target/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstComputationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unittests.*" />
+          <option name="PATTERN" value="unittests.computationtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.AddOperationTest" />
+      <option name="PACKAGE_NAME" value="unittests.computationtests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.FirstComputationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -95,51 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DefineOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstComputationTest.DefineComputation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unittests.*" />
+          <option name="PATTERN" value="unittests.computationtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.DefineOperationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DivOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.DivOperationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MulOperationTest.zeroMul" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unittests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.MulOperationTest" />
-      <option name="METHOD_NAME" value="zeroMul" />
+      <option name="PACKAGE_NAME" value="unittests.computationtests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.FirstComputationTest" />
+      <option name="METHOD_NAME" value="DefineComputation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,17 +129,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintOperationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstComputationTest.DoubleComputation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unittests.*" />
+          <option name="PATTERN" value="unittests.computationtests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="unittests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.PrintOperationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="unittests.computationtests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.FirstComputationTest" />
+      <option name="METHOD_NAME" value="DoubleComputation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstComputationTest.IntComputation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.computationtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests.computationtests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.FirstComputationTest" />
+      <option name="METHOD_NAME" value="IntComputation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -166,19 +167,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="TestNG.AddOperationTest" />
-      <item itemvalue="TestNG.DefineOperationTest" />
-      <item itemvalue="TestNG.DivOperationTest" />
-      <item itemvalue="TestNG.MulOperationTest.zeroMul" />
-      <item itemvalue="TestNG.PrintOperationTest" />
+      <item itemvalue="TestNG.D:/java/lab2/target/testng.xml" />
+      <item itemvalue="TestNG.FirstComputationTest" />
+      <item itemvalue="TestNG.FirstComputationTest.DefineComputation" />
+      <item itemvalue="TestNG.FirstComputationTest.DoubleComputation" />
+      <item itemvalue="TestNG.FirstComputationTest.IntComputation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddOperationTest" />
-        <item itemvalue="TestNG.DefineOperationTest" />
-        <item itemvalue="TestNG.PrintOperationTest" />
-        <item itemvalue="TestNG.DivOperationTest" />
-        <item itemvalue="TestNG.MulOperationTest.zeroMul" />
+        <item itemvalue="TestNG.D:/java/lab2/target/testng.xml" />
+        <item itemvalue="TestNG.FirstComputationTest.DefineComputation" />
+        <item itemvalue="TestNG.FirstComputationTest.DoubleComputation" />
+        <item itemvalue="TestNG.FirstComputationTest.IntComputation" />
+        <item itemvalue="TestNG.FirstComputationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676717263720</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Factory moved to singleton">
+      <created>1676718923241</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676718923241</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -250,7 +258,8 @@
     <MESSAGE value="good, should be added exception handler, logging and testing" />
     <MESSAGE value="exception handler was added, first test for add" />
     <MESSAGE value="tests for +, -, *, / define, print" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests for +, -, *, / define, print" />
+    <MESSAGE value="Factory moved to singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factory moved to singleton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,9 +270,19 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/unittests/AddOperationTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java</url>
           <line>77</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/calculator/Calculator.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

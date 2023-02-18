@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -19,7 +19,7 @@ public class AddOperationTest {
 
     public AddOperationTest() throws ReflectiveOperationException, IOException {}
 
-    @Test
+    @Test(groups = "Add")
     public void intAdd() {
         logger.log(Level.INFO, "Test for int add operation started...");
         String intAdd = """
@@ -31,7 +31,7 @@ public class AddOperationTest {
         assertEquals(166, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int add operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Add")
     public void negativeIntAdd() {
         logger.log(Level.INFO, "Test for negative int add operation started...");
         String negativeIntAdd = """
@@ -43,7 +43,7 @@ public class AddOperationTest {
         assertEquals(2, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int add operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Add")
     public void doubleAdd() {
         logger.log(Level.INFO, "Test for double add operation started...");
         String doubleAdd = """
@@ -55,7 +55,7 @@ public class AddOperationTest {
         assertEquals(23.8044704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double add operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Add")
     public void negativeDoubleAdd() {
         logger.log(Level.INFO, "Test for negative double add operation started...");
         String negativeDoubleAdd = """
@@ -67,7 +67,7 @@ public class AddOperationTest {
         assertEquals(-4.1130704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double add operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Add")
     public void notEnoughArgumentsAdd() {
         logger.log(Level.INFO, "Test for not enough arguments add operation started...");
         String notEnoughArgumentsAdd = """
@@ -79,7 +79,7 @@ public class AddOperationTest {
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for not enough arguments add operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Add")
     public void emptyAdd() {
         logger.log(Level.INFO, "Test for empty add operation started...");
         String emptyAdd = """

@@ -4,5 +4,23 @@
     <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.io.PrintStream,printf,java.lang.Class,getResourceAsStream" />
     </inspection_tool>
+    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="groups">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="Add" />
+            <item index="1" class="java.lang.String" itemvalue="Define" />
+            <item index="2" class="java.lang.String" itemvalue="Pop" />
+            <item index="3" class="java.lang.String" itemvalue="Mul" />
+            <item index="4" class="java.lang.String" itemvalue="Div" />
+            <item index="5" class="java.lang.String" itemvalue="Print" />
+            <item index="6" class="java.lang.String" itemvalue="Sqrt" />
+            <item index="7" class="java.lang.String" itemvalue="Push" />
+            <item index="8" class="java.lang.String" itemvalue="Sub" />
+            <item index="9" class="java.lang.String" itemvalue="Computation" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
   </profile>
 </component>

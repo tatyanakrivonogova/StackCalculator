@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -19,7 +19,7 @@ public class MulOperationTest {
 
     public MulOperationTest() throws ReflectiveOperationException, IOException {}
 
-    @Test
+    @Test(groups = "Mul")
     public void intMul() {
         logger.log(Level.INFO, "Test for int mul operation started...");
         String intMul = """
@@ -31,7 +31,7 @@ public class MulOperationTest {
         assertEquals(2716, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void negativeIntMul() {
         logger.log(Level.INFO, "Test for negative int mul operation started...");
         String negativeIntMul = """
@@ -43,7 +43,7 @@ public class MulOperationTest {
         assertEquals(-2716, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void doubleMul() {
         logger.log(Level.INFO, "Test for double mul operation started...");
         String doubleMul = """
@@ -55,7 +55,7 @@ public class MulOperationTest {
         assertEquals(1695.512, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void negativeDoubleMul() {
         logger.log(Level.INFO, "Test for negative double mul operation started...");
         String negativeDoubleMul = """
@@ -67,7 +67,7 @@ public class MulOperationTest {
         assertEquals(-1695.512, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void zeroMul() {
         logger.log(Level.INFO, "Test for zero mul operation started...");
         String zeroMul = """
@@ -79,7 +79,7 @@ public class MulOperationTest {
         assertEquals(0, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for zero mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void notEnoughArgumentsMul() {
         logger.log(Level.INFO, "Test for not enough arguments mul operation started...");
         String notEnoughArgumentsMul = """
@@ -91,7 +91,7 @@ public class MulOperationTest {
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for not enough arguments mul operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Mul")
     public void emptyMul() {
         logger.log(Level.INFO, "Test for empty mul operation started...");
         String emptyMul = """

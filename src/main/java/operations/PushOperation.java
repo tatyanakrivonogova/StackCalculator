@@ -8,7 +8,7 @@ public class PushOperation implements Operation {
     @Override
     public void execute(String[] args, ExecutionContext executionContext) throws CalculatorException {
         if (args.length != 2) {
-            throw new InvalidNumberOfArguments(args[0], args.length, 2);
+            throw new InvalidNumberOfArguments(args[0], args.length-1, 1);
         }
 
         try {

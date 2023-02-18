@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -19,7 +19,7 @@ public class SubOperationTest {
 
     public SubOperationTest() throws ReflectiveOperationException, IOException {}
 
-    @Test
+    @Test(groups = "Sub")
     public void intSub() {
         logger.log(Level.INFO, "Test for int sub operation started...");
         String intSub = """
@@ -31,7 +31,7 @@ public class SubOperationTest {
         assertEquals(2877, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int sub operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Sub")
     public void negativeIntSub() {
         logger.log(Level.INFO, "Test for negative int sub operation started...");
         String negativeIntSub = """
@@ -43,7 +43,7 @@ public class SubOperationTest {
         assertEquals(-18, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int sub operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Sub")
     public void doubleSub() {
         logger.log(Level.INFO, "Test for double sub operation started...");
         String doubleSub = """
@@ -55,7 +55,7 @@ public class SubOperationTest {
         assertEquals(4.1130704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double sub operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Sub")
     public void negativeDoubleSub() {
         logger.log(Level.INFO, "Test for negative double sub operation started...");
         String negativeDoubleSub = """
@@ -67,7 +67,7 @@ public class SubOperationTest {
         assertEquals(23.8044704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double sub operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Sub")
     public void notEnoughArgumentsSub() {
         logger.log(Level.INFO, "Test for not enough arguments sub operation started...");
         String notEnoughArgumentsSub = """
@@ -79,7 +79,7 @@ public class SubOperationTest {
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for not enough arguments sub operation successfully finished.");
     }
-    @Test
+    @Test(groups = "Sub")
     public void emptySub() {
         logger.log(Level.INFO, "Test for empty sub operation started...");
         String emptySub = """

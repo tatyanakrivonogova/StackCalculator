@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -20,7 +20,7 @@ public class PrintOperationTest {
     public PrintOperationTest() throws ReflectiveOperationException, IOException {
     }
 
-    @Test
+    @Test(groups = "Print")
     public void simplePrint() {
         logger.log(Level.INFO, "Test for simple print operation started...");
         String intPrint = """
@@ -33,7 +33,7 @@ public class PrintOperationTest {
         logger.log(Level.INFO, "Test for simple print operation successfully finished.");
     }
 
-    @Test
+    @Test(groups = "Print")
     public void emptyPrint() {
         logger.log(Level.INFO, "Test for empty print operation started...");
         String doublePrint = """
@@ -44,7 +44,7 @@ public class PrintOperationTest {
         logger.log(Level.INFO, "Test for empty print operation successfully finished.");
     }
 
-    @Test
+    @Test(groups = "Print")
     public void errorPrint() {
         logger.log(Level.INFO, "Test for error print operation started...");
         String negativeDoublePrint = """

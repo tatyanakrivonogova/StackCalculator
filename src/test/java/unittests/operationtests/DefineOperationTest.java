@@ -1,4 +1,4 @@
-package unittests;
+package unittests.operationtests;
 
 import calculator.Calculator;
 import calculator.ExecutionContext;
@@ -20,7 +20,7 @@ public class DefineOperationTest {
     public DefineOperationTest() throws ReflectiveOperationException, IOException {
     }
 
-    @Test
+    @Test(groups = "Define")
     public void simpleDefine() {
         logger.log(Level.INFO, "Test for simple define operation started...");
         String intDefine = """
@@ -32,7 +32,7 @@ public class DefineOperationTest {
         logger.log(Level.INFO, "Test for simple define operation successfully finished.");
     }
 
-    @Test
+    @Test(groups = "Define")
     public void repeatDefine() {
         logger.log(Level.INFO, "Test for repeat define operation started...");
         String negativeIntDefine = """
@@ -47,7 +47,7 @@ public class DefineOperationTest {
         logger.log(Level.INFO, "Test for repeat define operation successfully finished.");
     }
 
-    @Test
+    @Test(groups = "Define")
     public void emptyDefine() {
         logger.log(Level.INFO, "Test for empty define operation started...");
         String doubleDefine = """
@@ -59,7 +59,7 @@ public class DefineOperationTest {
         logger.log(Level.INFO, "Test for empty define operation successfully finished.");
     }
 
-    @Test
+    @Test(groups = "Define")
     public void errorDefine() {
         logger.log(Level.INFO, "Test for error define operation started...");
         String negativeDoubleDefine = """
