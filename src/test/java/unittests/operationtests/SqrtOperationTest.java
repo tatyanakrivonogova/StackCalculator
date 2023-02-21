@@ -13,11 +13,11 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class SqrtOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
-    public SqrtOperationTest() throws ReflectiveOperationException, IOException {}
+    public SqrtOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
+    }
 
     @Test(groups = "Sqrt")
     public void intSqrt() {
@@ -25,7 +25,7 @@ public class SqrtOperationTest {
         String intSqrt = """
         PUSH 289
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intSqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intSqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(17, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int sqrt operation successfully finished.");
@@ -36,7 +36,7 @@ public class SqrtOperationTest {
         String negativeIntSqrt = """
         PUSH -289
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntSqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntSqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(-289, calculator.getExecutionContext().getStack().peek());
         assertEquals(1, calculator.getExecutionContext().getStack().size());
@@ -48,7 +48,7 @@ public class SqrtOperationTest {
         String doubleSqrt = """
         PUSH 182.25
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleSqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleSqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(13.5, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double sqrt operation successfully finished.");
@@ -59,7 +59,7 @@ public class SqrtOperationTest {
         String negativeDoubleSqrt = """
         PUSH -182.25
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleSqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleSqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(-182.25, calculator.getExecutionContext().getStack().peek());
         assertEquals(1, calculator.getExecutionContext().getStack().size());
@@ -71,7 +71,7 @@ public class SqrtOperationTest {
         String zeroSqrt = """
         PUSH 0
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(zeroSqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(zeroSqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for zero sqrt operation successfully finished.");
@@ -81,7 +81,7 @@ public class SqrtOperationTest {
         logger.log(Level.INFO, "Test for empty sqrt operation started...");
         String emptySqrt = """
         SQRT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(emptySqrt.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(emptySqrt.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty sqrt operation successfully finished.");

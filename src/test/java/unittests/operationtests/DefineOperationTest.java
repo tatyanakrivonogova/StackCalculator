@@ -13,11 +13,10 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class DefineOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(DefineOperationTest.class);
 
     public DefineOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
     }
 
     @Test(groups = "Define")
@@ -26,7 +25,7 @@ public class DefineOperationTest {
         String intDefine = """
                 DEFINE a 8
                 PUSH a""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intDefine.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intDefine.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(8, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for simple define operation successfully finished.");
@@ -41,7 +40,7 @@ public class DefineOperationTest {
                 PUSH 1
                 DEFINE a 9
                 +""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntDefine.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntDefine.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(9, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for repeat define operation successfully finished.");
@@ -53,7 +52,7 @@ public class DefineOperationTest {
         String doubleDefine = """
                 DEFINE a
                 PUSH a""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleDefine.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleDefine.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty define operation successfully finished.");
@@ -64,7 +63,7 @@ public class DefineOperationTest {
         logger.log(Level.INFO, "Test for error define operation started...");
         String negativeDoubleDefine = """
                 DEFINE a x""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleDefine.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleDefine.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for error define operation successfully finished.");

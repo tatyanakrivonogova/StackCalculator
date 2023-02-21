@@ -13,10 +13,10 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class ComputationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(ComputationTest.class);
-    public ComputationTest() throws ReflectiveOperationException, IOException {}
+    public ComputationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
+    }
 
     @Test(groups = "Computation")
     public void IntComputation() {
@@ -31,7 +31,7 @@ public class ComputationTest {
                 *
                 /
                 PRINT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(1881, calculator.getExecutionContext().getStack().peek());
@@ -53,7 +53,7 @@ public class ComputationTest {
                 PUSH 9
                 -
                 PRINT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(0, calculator.getExecutionContext().getStack().peek());
@@ -76,7 +76,7 @@ public class ComputationTest {
                 *
                 SQRT
                 PRINT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(59.602852280742404, calculator.getExecutionContext().getStack().peek());

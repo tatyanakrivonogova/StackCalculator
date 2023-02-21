@@ -2,8 +2,8 @@ package calculatorExceptions.operationExceptions;
 
 import calculatorExceptions.CalculatorException;
 
-public class InvalidArgument extends CalculatorException {
-    public InvalidArgument() {
+public class InvalidDefineArgument extends CalculatorException {
+    public InvalidDefineArgument() {
         super("Argument is not Double");
     }
 }

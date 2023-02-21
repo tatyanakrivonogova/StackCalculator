@@ -13,11 +13,10 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class PrintOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(PrintOperationTest.class);
 
     public PrintOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
     }
 
     @Test(groups = "Print")
@@ -26,7 +25,7 @@ public class PrintOperationTest {
         String intPrint = """
                 PUSH 5
                 PRINT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(5, calculator.getExecutionContext().getStack().peek());
@@ -38,7 +37,7 @@ public class PrintOperationTest {
         logger.log(Level.INFO, "Test for empty print operation started...");
         String doublePrint = """
                 PRINT""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty print operation successfully finished.");
@@ -51,7 +50,7 @@ public class PrintOperationTest {
                 DEFINE a 3
                 PUSH a
                 PRINT a""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoublePrint.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoublePrint.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(3, calculator.getExecutionContext().getStack().peek());

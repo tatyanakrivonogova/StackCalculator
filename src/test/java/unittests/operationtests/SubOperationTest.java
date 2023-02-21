@@ -13,11 +13,11 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class SubOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
-    public SubOperationTest() throws ReflectiveOperationException, IOException {}
+    public SubOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
+    }
 
     @Test(groups = "Sub")
     public void intSub() {
@@ -26,7 +26,7 @@ public class SubOperationTest {
         PUSH 879
         PUSH 3756
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intSub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intSub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(2877, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int sub operation successfully finished.");
@@ -38,7 +38,7 @@ public class SubOperationTest {
         PUSH 10
         PUSH -8
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntSub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntSub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(-18, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int sub operation successfully finished.");
@@ -50,7 +50,7 @@ public class SubOperationTest {
         PUSH 9.84570
         PUSH 13.9587704
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleSub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleSub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(4.1130704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double sub operation successfully finished.");
@@ -62,7 +62,7 @@ public class SubOperationTest {
         PUSH -13.9587704
         PUSH 9.84570
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleSub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleSub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(23.8044704, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double sub operation successfully finished.");
@@ -73,7 +73,7 @@ public class SubOperationTest {
         String notEnoughArgumentsSub = """
         PUSH 2.5
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(notEnoughArgumentsSub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(notEnoughArgumentsSub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(2.5, calculator.getExecutionContext().getStack().peek());
         assertEquals(1, calculator.getExecutionContext().getStack().size());
@@ -84,7 +84,7 @@ public class SubOperationTest {
         logger.log(Level.INFO, "Test for empty sub operation started...");
         String emptySub = """
         -""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(emptySub.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(emptySub.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty sub operation successfully finished.");

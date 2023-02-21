@@ -13,11 +13,10 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class PopOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(PopOperationTest.class);
 
     public PopOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
     }
 
     @Test(groups = "Pop")
@@ -27,7 +26,7 @@ public class PopOperationTest {
                 PUSH 5
                 PUSH 2
                 POP""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPop.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPop.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(5, calculator.getExecutionContext().getStack().peek());
@@ -39,7 +38,7 @@ public class PopOperationTest {
         logger.log(Level.INFO, "Test for empty pop operation started...");
         String doublePop = """
                 POP""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePop.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePop.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty pop operation successfully finished.");

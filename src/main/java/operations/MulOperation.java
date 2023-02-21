@@ -8,7 +8,7 @@ public class MulOperation implements Operation {
     @Override
     public void execute(String[] args, ExecutionContext executionContext) throws CalculatorException {
         if (args.length != 1) {
-            throw new InvalidNumberOfArguments((String) args[0], args.length, 1);
+            throw new InvalidNumberOfArguments(args[0], args.length-1, 0);
         }
         if (executionContext.getStack().size() < 2) {
             throw new NotEnoughElementsOnStack();

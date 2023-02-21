@@ -13,16 +13,17 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class PushOperationTest {
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(PushOperationTest.class);
-    public PushOperationTest() throws ReflectiveOperationException, IOException {}
+    public PushOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
+    }
 
     @Test(groups = "Push")
     public void simplePush() {
         logger.log(Level.INFO, "Test for simple push operation started...");
         String intPush = """
                 PUSH 5""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intPush.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intPush.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(5, calculator.getExecutionContext().getStack().peek());
@@ -34,7 +35,7 @@ public class PushOperationTest {
         logger.log(Level.INFO, "Test for empty push operation started...");
         String doublePush = """
                 PUSH""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty push operation successfully finished.");
@@ -45,7 +46,7 @@ public class PushOperationTest {
         String doublePush = """
                 DEFINE a 9
                 PUSH a""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(9, calculator.getExecutionContext().getStack().peek());
@@ -57,7 +58,7 @@ public class PushOperationTest {
         String doublePush = """
                 PUSH 4
                 PUSH a""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doublePush.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1, calculator.getExecutionContext().getStack().size());
         assertEquals(4, calculator.getExecutionContext().getStack().peek());

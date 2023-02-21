@@ -23,9 +23,9 @@ public class Main {
             }
         }
 
-        Calculator calculator = null;
+        Calculator calculator;
         try {
-            calculator = new Calculator(input, Factory.getInstance(), new ExecutionContext(), logger);
+            Factory.getInstance();
         }
         catch (IOException e) {
             logger.log(Level.ERROR, "Config file is not found");
@@ -36,6 +36,7 @@ public class Main {
             System.exit(-1);
         }
 
+        calculator = new Calculator(input, new ExecutionContext(), logger);
         calculator.calculate();
     }
 }

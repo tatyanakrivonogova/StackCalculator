@@ -13,11 +13,11 @@ import java.io.IOException;
 import static org.testng.Assert.assertEquals;
 
 public class MulOperationTest {
-
-    Factory factory = Factory.getInstance();
     private static final Logger logger = Logger.getLogger(AddOperationTest.class);
 
-    public MulOperationTest() throws ReflectiveOperationException, IOException {}
+    public MulOperationTest() throws ReflectiveOperationException, IOException {
+        Factory.getInstance();
+    }
 
     @Test(groups = "Mul")
     public void intMul() {
@@ -26,7 +26,7 @@ public class MulOperationTest {
         PUSH 97
         PUSH 28
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(intMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(intMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(2716, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for int mul operation successfully finished.");
@@ -38,7 +38,7 @@ public class MulOperationTest {
         PUSH 97
         PUSH -28
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeIntMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(-2716, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative int mul operation successfully finished.");
@@ -50,7 +50,7 @@ public class MulOperationTest {
         PUSH 46.58
         PUSH 36.4
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(doubleMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(1695.512, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for double mul operation successfully finished.");
@@ -62,7 +62,7 @@ public class MulOperationTest {
         PUSH 46.58
         PUSH -36.4
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(negativeDoubleMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(-1695.512, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for negative double mul operation successfully finished.");
@@ -74,7 +74,7 @@ public class MulOperationTest {
         PUSH 6
         PUSH 0
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(zeroMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(zeroMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().peek());
         logger.log(Level.INFO, "Test for zero mul operation successfully finished.");
@@ -85,7 +85,7 @@ public class MulOperationTest {
         String notEnoughArgumentsMul = """
         PUSH 2.5
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(notEnoughArgumentsMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(notEnoughArgumentsMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(2.5, calculator.getExecutionContext().getStack().peek());
         assertEquals(1, calculator.getExecutionContext().getStack().size());
@@ -96,7 +96,7 @@ public class MulOperationTest {
         logger.log(Level.INFO, "Test for empty mul operation started...");
         String emptyMul = """
         *""";
-        Calculator calculator = new Calculator(new ByteArrayInputStream(emptyMul.getBytes()), factory, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(new ByteArrayInputStream(emptyMul.getBytes()), new ExecutionContext(), logger);
         calculator.calculate();
         assertEquals(0, calculator.getExecutionContext().getStack().size());
         logger.log(Level.INFO, "Test for empty mul operation successfully finished.");

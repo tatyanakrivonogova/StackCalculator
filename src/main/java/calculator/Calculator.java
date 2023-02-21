@@ -10,13 +10,11 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 public class Calculator {
-    private final Factory factory;
     private final ExecutionContext executionContext;
     private final Logger logger;
     InputStream input;
-    public Calculator(InputStream _input, Factory _factory, ExecutionContext _executionContext, org.apache.log4j.Logger _logger) {
+    public Calculator(InputStream _input, ExecutionContext _executionContext, org.apache.log4j.Logger _logger) {
         input = _input;
-        factory = _factory;
         executionContext = _executionContext;
         logger = _logger;
     }
