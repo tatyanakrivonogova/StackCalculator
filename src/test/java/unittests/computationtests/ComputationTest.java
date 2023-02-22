@@ -3,18 +3,18 @@ package unittests.computationtests;
 import calculator.Calculator;
 import calculator.ExecutionContext;
 import calculator.Factory;
+import factoryExceptions.FactoryException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
 public class ComputationTest {
     private static final Logger logger = Logger.getLogger(ComputationTest.class);
-    public ComputationTest() throws ReflectiveOperationException, IOException {
+    public ComputationTest() throws FactoryException {
         Factory.getInstance();
     }
 
@@ -22,6 +22,7 @@ public class ComputationTest {
     public void IntComputation() {
         logger.log(Level.INFO, "Int computation test started...");
         String intPrint = """
+                #first computation test
                 PUSH 2
                 PUSH 149
                 PUSH 212

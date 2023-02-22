@@ -44,7 +44,7 @@ public class Calculator {
                 logger.log(Level.INFO, "Operation " + currentArgs[0] + " was executed successfully!");
             }
             catch (CalculatorException e) {
-                logger.log(Level.INFO, e.getMessage());
+                logger.log(Level.WARN, e.getMessage());
             }
         }
     }

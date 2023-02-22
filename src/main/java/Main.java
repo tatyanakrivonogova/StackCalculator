@@ -4,6 +4,7 @@ import calculator.Factory;
 
 import java.io.*;
 
+import factoryExceptions.FactoryException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -23,20 +24,15 @@ public class Main {
             }
         }
 
-        Calculator calculator;
         try {
             Factory.getInstance();
         }
-        catch (IOException e) {
-            logger.log(Level.ERROR, "Config file is not found");
-            System.exit(-1);
-        }
-        catch (ReflectiveOperationException e) {
-            logger.log(Level.ERROR, "Class from config file is not found");
+        catch (FactoryException e) {
+            logger.log(Level.ERROR, e.getMessage());
             System.exit(-1);
         }
 
-        calculator = new Calculator(input, new ExecutionContext(), logger);
+        Calculator calculator = new Calculator(input, new ExecutionContext(), logger);
         calculator.calculate();
     }
 }

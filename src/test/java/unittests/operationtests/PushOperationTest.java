@@ -3,18 +3,18 @@ package unittests.operationtests;
 import calculator.Calculator;
 import calculator.ExecutionContext;
 import calculator.Factory;
+import factoryExceptions.FactoryException;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 
 import static org.testng.Assert.assertEquals;
 
 public class PushOperationTest {
     private static final Logger logger = Logger.getLogger(PushOperationTest.class);
-    public PushOperationTest() throws ReflectiveOperationException, IOException {
+    public PushOperationTest() throws FactoryException {
         Factory.getInstance();
     }
 

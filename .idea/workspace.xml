@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="added computation tests">
+    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="fixed factory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/ConfigFileNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/FactoryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/OperationClassNotFound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidDefineArgument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/AddOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/AddOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/DefineOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DefineOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/DivOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DivOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/MulOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/MulOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/PopOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PopOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/PrintOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PrintOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/operations/SubOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SubOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DefineOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DefineOperationTest.java" afterDir="false" />
@@ -102,6 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ComputationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unittests.computationtests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="unittests.computationtests" />
+      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.ComputationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/java/lab2/target/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="SUITE_NAME" value="$PROJECT_DIR$/target/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -146,39 +158,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstComputationTest.DoubleComputation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="unittests.computationtests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="unittests.computationtests" />
-      <option name="MAIN_CLASS_NAME" value="unittests.computationtests.FirstComputationTest" />
-      <option name="METHOD_NAME" value="DoubleComputation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.ComputationTest" />
       <item itemvalue="TestNG.AddOperationTest" />
       <item itemvalue="TestNG.DefineOperationTest" />
       <item itemvalue="TestNG.D:/java/lab2/target/testng.xml" />
       <item itemvalue="TestNG.FirstComputationTest.DefineComputation" />
-      <item itemvalue="TestNG.FirstComputationTest.DoubleComputation" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/java/lab2/target/testng.xml" />
+        <item itemvalue="TestNG.ComputationTest" />
         <item itemvalue="TestNG.AddOperationTest" />
         <item itemvalue="TestNG.DefineOperationTest" />
         <item itemvalue="TestNG.FirstComputationTest.DefineComputation" />
-        <item itemvalue="TestNG.FirstComputationTest.DoubleComputation" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676742172192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed factory">
+      <created>1676985597370</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676985597370</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -267,7 +268,8 @@
     <MESSAGE value="Factory moved to singleton" />
     <MESSAGE value="dded computation tests" />
     <MESSAGE value="added computation tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added computation tests" />
+    <MESSAGE value="fixed factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -279,13 +281,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
