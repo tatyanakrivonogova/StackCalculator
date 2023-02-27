@@ -2,9 +2,9 @@ package operations;
 
 import calculator.ExecutionContext;
 import calculatorExceptions.CalculatorException;
-import calculatorExceptions.operationExceptions.InvalidNumberOfArguments;
-import calculatorExceptions.operationExceptions.InvalidSqrtArgument;
-import calculatorExceptions.operationExceptions.NotEnoughElementsOnStack;
+import calculatorExceptions.argumentsExceptions.InvalidNumberOfArguments;
+import calculatorExceptions.argumentsExceptions.InvalidSqrtArgument;
+import calculatorExceptions.stackExceptions.NotEnoughElementsOnStack;
 
 public class SqrtOperation implements Operation {
     @Override

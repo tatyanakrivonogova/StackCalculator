@@ -4,25 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="fixed factory">
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/ConfigFileNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/FactoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryExceptions/OperationClassNotFound.java" afterDir="false" />
+    <list default="true" id="0e580f39-69ff-45bc-bf5f-92d25f22c30a" name="Changes" comment="after review">
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/argumentsExceptions/ArgumentsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/argumentsExceptions/InvalidDefineArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/arithmeticExceptions/ArithmeticException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/stackExceptions/StackException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/computationtests/ComputationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DefineOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DefineOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DivOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/DivOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/MulOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/MulOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PopOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PopOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PrintOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PrintOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PushOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/PushOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SqrtOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SqrtOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SubOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unittests/operationtests/SubOperationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/DivisionByZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/arithmeticExceptions/DivisionByZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidDefineArgument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidNumberOfArguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/argumentsExceptions/InvalidNumberOfArguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/InvalidSqrtArgument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/argumentsExceptions/InvalidSqrtArgument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/NotEnoughElementsOnStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/stackExceptions/NotEnoughElementsOnStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/StackIsEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/stackExceptions/StackIsEmpty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/UndeclaredVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculatorExceptions/argumentsExceptions/UndeclaredVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/AddOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/AddOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/DefineOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DefineOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/DivOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/DivOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/MulOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/MulOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/PopOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PopOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/PrintOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PrintOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/PushOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/PushOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/SqrtOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SqrtOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/operations/SubOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/operations/SubOperation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,14 +67,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="calculatorExceptions.argumentsExceptions" />
+      <recent name="calculatorExceptions.stackExceptions" />
+      <recent name="calculatorExceptions.arithmeticExceptions" />
+      <recent name="calculatorExceptions" />
       <recent name="unittests.operationtests" />
-      <recent name="calculatorExceptions.inputStreamExceptions" />
-      <recent name="configurationExceptions" />
-      <recent name="calculatorExceptions.configExceptions" />
-      <recent name="calculatorExceptions.operationExceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/java/lab2/target/testng.xml">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lab2" />
@@ -234,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676985597370</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="after review">
+      <created>1677056038868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677056038868</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -269,19 +279,20 @@
     <MESSAGE value="dded computation tests" />
     <MESSAGE value="added computation tests" />
     <MESSAGE value="fixed factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed factory" />
+    <MESSAGE value="after review" />
+    <option name="LAST_COMMIT_MESSAGE" value="after review" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/calculatorExceptions/operationExceptions/DivisionByZero.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/calculatorExceptions/arithmeticExceptions/DivisionByZero.java</url>
           <line>6</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/unittests/operationtests/AddOperationTest.java</url>
-          <line>78</line>
+          <line>77</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>

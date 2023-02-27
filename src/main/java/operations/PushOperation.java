@@ -1,8 +1,8 @@
 package operations;
 import calculatorExceptions.*;
 import calculator.ExecutionContext;
-import calculatorExceptions.operationExceptions.InvalidNumberOfArguments;
-import calculatorExceptions.operationExceptions.UndeclaredVariable;
+import calculatorExceptions.argumentsExceptions.InvalidNumberOfArguments;
+import calculatorExceptions.argumentsExceptions.UndeclaredVariable;
 
 public class PushOperation implements Operation {
     @Override

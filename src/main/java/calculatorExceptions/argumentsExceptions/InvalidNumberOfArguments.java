@@ -1,8 +1,6 @@
-package calculatorExceptions.operationExceptions;
+package calculatorExceptions.argumentsExceptions;
 
-import calculatorExceptions.CalculatorException;
-
-public class InvalidNumberOfArguments extends CalculatorException {
+public class InvalidNumberOfArguments extends ArgumentsException {
     public InvalidNumberOfArguments(String operation, int badArgsNumber, int ExpectedArgsNumber) {
         super("operation " + operation + " expected " + ExpectedArgsNumber + " arguments instead of " + badArgsNumber);
     }

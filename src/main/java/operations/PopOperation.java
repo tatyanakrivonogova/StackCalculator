@@ -1,8 +1,8 @@
 package operations;
 import calculatorExceptions.*;
 import calculator.ExecutionContext;
-import calculatorExceptions.operationExceptions.InvalidNumberOfArguments;
-import calculatorExceptions.operationExceptions.StackIsEmpty;
+import calculatorExceptions.argumentsExceptions.InvalidNumberOfArguments;
+import calculatorExceptions.stackExceptions.StackIsEmpty;
 
 public class PopOperation implements Operation {
     @Override

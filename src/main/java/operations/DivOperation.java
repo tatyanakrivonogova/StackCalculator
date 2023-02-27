@@ -1,9 +1,9 @@
 package operations;
 import calculatorExceptions.*;
 import calculator.ExecutionContext;
-import calculatorExceptions.operationExceptions.DivisionByZero;
-import calculatorExceptions.operationExceptions.InvalidNumberOfArguments;
-import calculatorExceptions.operationExceptions.NotEnoughElementsOnStack;
+import calculatorExceptions.arithmeticExceptions.DivisionByZero;
+import calculatorExceptions.argumentsExceptions.InvalidNumberOfArguments;
+import calculatorExceptions.stackExceptions.NotEnoughElementsOnStack;
 
 public class DivOperation implements Operation {
     @Override
