@@ -1,6 +1,7 @@
 package calculator;
 
 import calculatorExceptions.CalculatorException;
+import factoryExceptions.FactoryException;
 import operations.Operation;
 
 import java.io.InputStream;
@@ -43,7 +44,7 @@ public class Calculator {
                 currentOperation.execute(currentArgs, executionContext);
                 logger.log(Level.INFO, "Operation " + currentArgs[0] + " was executed successfully!");
             }
-            catch (CalculatorException e) {
+            catch (CalculatorException | FactoryException e) {
                 logger.log(Level.WARN, e.getMessage());
             }
         }

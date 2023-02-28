@@ -1,5 +1,6 @@
 package calculator;
 
+import factoryExceptions.UnknownOperation;
 import factoryExceptions.ConfigFileNotFound;
 import factoryExceptions.FactoryException;
 import java.io.IOException;
@@ -17,7 +18,10 @@ public class Factory {
         }
     }
 
-    public static Object getOperation(final String selectedObject) {
+    public static Object getOperation(final String selectedObject) throws FactoryException {
+        if (configuration.getConfigurationMap().get(selectedObject) == null) {
+            throw new UnknownOperation(selectedObject);
+        }
         return configuration.getConfigurationMap().get(selectedObject);
     }
 
